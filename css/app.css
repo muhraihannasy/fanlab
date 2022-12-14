@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Impact";
+  src: url("../font/impact.ttf");
+}
+
+body {
+  @apply bg-secondary;
+}
+
+footer {
+  @apply pb-[1.5rem];
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.navbar {
+  transition: 0.2s ease-in-out;
+  @apply sm:left-0 left-[-100rem] sm:visible invisible sm:opacity-100 opacity-0;
+}
+
+.navbar.active-navbar {
+  @apply left-0 visible opacity-100;
+}
+
+.input-group {
+  @apply flex flex-col gap-2;
+}
+
+.input-group input,
+.input-group textarea {
+  @apply bg-third rounded-[4px] px-4 text-secondary font-mavenpro;
+}
+
+.input-group input {
+  @apply h-[36px];
+}
+
+.input-group textarea {
+  @apply h-[197px] py-[0.5rem];
+}

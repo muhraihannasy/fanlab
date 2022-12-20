@@ -8,8 +8,8 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="border-b-[1px] border-primary pb-[1.4rem]">
-      <nav class="container flex items-center justify-between pt-[1.5rem]">
+    <header class="border-b-[1px] border-primary pb-[1.4rem] sm:relative fixed w-full z-[999999] sm:bg-transparent top-0 bg-secondary">
+      <nav class="container flex items-center justify-between pt-[1.5rem] ">
         <a
           href="index.html"
           class="nav-logo text-white text-[32px] font-impact"
@@ -54,9 +54,9 @@
       </nav>
     </header>
 
-    <main>
+    <main class="sm:pt-0 pt-[6rem]">
       <section>
-        <div class="relative">
+        <div class="relative z-[-1]">
           <div class="flex items-center justify-center">
             <img
               src="./images/home/poster-me.png"

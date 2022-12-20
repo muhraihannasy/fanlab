@@ -8,7 +8,9 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="border-b-[1px] border-primary pb-[1.4rem]">
+    <header
+      class="border-b-[1px] border-primary pb-[1.4rem] sm:relative fixed w-full z-[999999] sm:bg-transparent top-0 bg-secondary"
+    >
       <nav class="container flex items-center justify-between pt-[1.5rem]">
         <a
           href="index.html"
@@ -18,7 +20,7 @@
         </a>
 
         <ul
-          class="flex sm:flex-row flex-col sm:w-max w-full h-[100%] sm:top-auto top-0 left-0 sm:pt-0 pt-[5rem] items-center sm:relative fixed gap-[36px] text-white text-[1rem] bg-secondary navbar font-impact"
+          class="flex sm:flex-row flex-col sm:w-max w-full h-[100vh] sm:top-auto top-0 left-0 sm:pt-0 pt-[5rem] items-center sm:relative fixed gap-[36px] text-white text-[1rem] bg-secondary navbar font-impact z-[9999]"
         >
           <li
             class="sm:hidden block button-nav-mobile-close text-[2rem] cursor-pointer"
@@ -54,11 +56,13 @@
       </nav>
     </header>
 
-    <main>
+    <main class="sm:pt-0 pt-[6rem]">
       <section>
         <div class="container text-white mt-[2.5rem]">
           <div class="lg:mb-[40px] mb-[30px]">
-            <h2 class="font-impact text-center text-[24px]">Contact</h2>
+            <h2 class="font-impact text-center text-[24px] mb-[40px]">
+              Contact
+            </h2>
 
             <form
               action="mailto:vanlab.digital@gmail.com"
@@ -66,12 +70,12 @@
               enctype="text/plain"
               class="max-w-[60rem] mx-auto"
             >
-              <div class="flex items-center mb-[1rem] gap-3">
-                <div class="input-group flex-1">
+              <div class="grid grid-cols-2 mb-[1rem] gap-3">
+                <div class="input-group">
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" />
                 </div>
-                <div class="input-group flex-1">
+                <div class="input-group">
                   <label for="email">Email</label>
                   <input
                     type="email"
